@@ -1,0 +1,41 @@
+import BaseLayout from "../layouts/BaseLayout.astro";
+import BaseCard from "../components/BaseCard.astro";
+import Collapse from "../components/blog/collapse.astro";
+import Diff from "../components/blog/diff.astro";
+import Error from "../components/blog/error.astro";
+import Info from "../components/blog/info.astro";
+import Kbd from "../components/blog/kbd.astro";
+import Success from "../components/blog/success.astro";
+import Warning from "../components/blog/warning.astro";
+import TimeLine from "../components/page/TimeLine.astro";
+import LinkCard from "../components/page/LinkCard.astro";
+
+<BaseLayout title="Friends">
+  <BaseCard title="Friends">
+# Friends
+
+---
+
+    <div class="grid grid-cols-2 gap-4">
+      <LinkCard
+        title="B0bul0"
+        desc="Java Developer"
+        url="https://www.linkedin.com/in/bruno-rezende-41a63322a/"
+        img="https://cdn.discordapp.com/avatars/308034779104935936/9fe7f3d357fed978279fa7ff3a851b0a.webp"
+      />
+      <LinkCard
+        title="Stoneg0mes"
+        desc="Java, Kotlin Developer"
+        url="https://www.linkedin.com/in/samuel-gomes-194aa9235/"
+        img="https://cdn.discordapp.com/avatars/488885110251192330/8753fa0a8a67949815a2da6a3fdf538f.webp"
+      />
+      <LinkCard
+        title="Natan"
+        desc="Software Engineer"
+        url="https://www.linkedin.com/in/ntvieira/"
+        img="https://cdn.discordapp.com/avatars/1275209324377145416/cae51be14ee41f957c3f31959121ac07.webp"
+      />
+    </div>
+
+  </BaseCard>
+</BaseLayout>

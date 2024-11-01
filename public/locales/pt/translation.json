@@ -1,0 +1,16 @@
+{
+  "label": {
+    "noTag": "Nenhuma tag atribuída",
+    "tagCard": "Tags",
+    "tagPage": "Tag",
+    "noCategory": "Sem categoria atribuída",
+    "categoryCard": "Categorias",
+    "categoryPage": "Categoria",
+    "link": "Link: ",
+    "prevPage": "Postagens recentes",
+    "nextPage": "Outras postagens",
+    "wordCount": "palavras",
+    "readTime": "minutos",
+    "share": "Compartilhar"
+  }
+}

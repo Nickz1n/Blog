@@ -1,0 +1,44 @@
+import BaseLayout from "../layouts/BaseLayout.astro";
+import BaseCard from "../components/BaseCard.astro";
+import Collapse from "../components/blog/collapse.astro";
+import Diff from "../components/blog/diff.astro";
+import Error from "../components/blog/error.astro";
+import Info from "../components/blog/info.astro";
+import Kbd from "../components/blog/kbd.astro";
+import Success from "../components/blog/success.astro";
+import Warning from "../components/blog/warning.astro";
+import TimeLine from "../components/page/TimeLine.astro";
+import LinkCard from "../components/page/LinkCard.astro";
+
+<BaseLayout title="About">
+  <BaseCard title="About">
+# Story my Life 🌹
+
+---
+
+## resume
+
+I design beautifully simple things, code complex things, and turn creativity into art. I love what I do, but I'm always looking for new things.
+
+## TimeLine
+
+    <TimeLine
+
+items={[
+{ year: "2004-06-11", event: "The day I was born." },
+{ year: "2008", event: "I got my first computer and helped my father set it up when I was 4 years old." },
+{ year: "2012", event: "I started reading my father's books about the Language Java."},
+{ year: "2013", event: "I had access to the internet and started playing online games."},
+{ year: "2015", event: "I started creating Minecraft servers."},
+{ year: "2015", event: "Developed website and store for Minecraft servers." },
+{ year: "2016", event: "I started studying Javascript and Python." },
+{ year: "2017", event: "I had an illusion of love, and I was sad." },
+{ year: "2018", event: "I started thinking about what to do with my life." },
+{ year: "2019", event: "I created my first e-commerce to make money." },
+{ year: "2020", event: "I met amazing people on the internet, and I paid the bills at home." },
+{ year: "2021", event: "I started college, and my god, I hated spending all day studying." },
+]}
+/>
+
+  </BaseCard>
+</BaseLayout>
