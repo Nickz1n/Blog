@@ -1,6 +1,5 @@
-# 🧊 Frosti
-
-[![license](https://badgen.net/github/license/EveSunMaple/Frosti)](https://github.com/EveSunMaple/Frosti/blob/main/LICENSE)&nbsp;&nbsp;&nbsp;[![release](https://badgen.net/github/release/EveSunMaple/Frosti)](https://github.com/EveSunMaple/Frosti/releases)&nbsp;&nbsp;&nbsp;[![stackblitz](https://developer.stackblitz.com/img/open_in_stackblitz_small.svg)](https://stackblitz.com/github/EveSunMaple/Frosti)
+# 👑 NickZ'in | Blog
+[![License](https://badgen.net/github/license/nickz1n/blog)](https://github.com/Nickz1n/Blog/blob/main/LICENSE)&nbsp;&nbsp;&nbsp;[![release](https://badgen.net/github/release/nickz1n/blog)](https://github.com/nickz1n/blog/releases)&nbsp;&nbsp;&nbsp;
 
 <pre align="center">
 A simple, elegant, and fast static blog template! 🚀 Built with Astro
