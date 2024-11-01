@@ -16,8 +16,8 @@ export const SERVER_URL = "https://demo.saroprock.com";
 
 // Menu items for navigation
 export const menuItems = [
-  { id: "home", text: "Home", href: "/", svg: "home", target: "_self" }, // Home page
-  { id: "about", text: "About", href: "/about", svg: "about", target: "_self" }, // About page
+  { id: "home", text: "Home", href: "/", svg: "home", target: "_self" }, // Página Incial
+  { id: "about", text: "About", href: "/about", svg: "about", target: "_self" }, // Sobre mim
   {
     id: "blog",
     text: "Blogs",

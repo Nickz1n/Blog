@@ -19,12 +19,12 @@ export async function getStaticPaths({ paginate }: { paginate: any }) {
 
   const sortedPosts = [...topPosts, ...otherPosts];
 
-  // 获取统计信息
+  // Obtenha estatísticas
   const postsWithStats = await Promise.all(
     sortedPosts.map(async (post) => {
       const { remarkPluginFrontmatter } = await post.render();
 
-      // 将统计信息添加到 post 数据中
+      // Adicione estatísticas para postar dados
       return {
         ...post,
         remarkPluginFrontmatter: {
@@ -35,7 +35,7 @@ export async function getStaticPaths({ paginate }: { paginate: any }) {
     }),
   );
 
-  // 使用 paginate 处理分页
+  // Use paginate para lidar com paginação
   return paginate(postsWithStats, { pageSize: 8 });
 }
 

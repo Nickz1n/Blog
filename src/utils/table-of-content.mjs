@@ -1,7 +1,7 @@
 import { codeToHtml } from "shiki";
 
 export async function highlightCode(block) {
-    const code = block.rich_text.map((text) => text.plain_text).join("\n"); // 输入代码片段
+    const code = block.rich_text.map((text) => text.plain_text).join("\n"); // Insira o trecho de código
 
     const html = await codeToHtml(code, {
         lang: block.language,
