@@ -27,25 +27,32 @@ export const menuItems = [
     subItems: [
       {
         id: "all",
-        text: "All blogs",
+        text: "All posts",
         href: "/blog",
         svg: "post",
         target: "_self",
       }, // Todos os Posts
       {
         id: "tech",
-        text: "Tech blogs",
+        text: "Technology",
         href: "/blog/categories/tech",
         svg: "cube",
         target: "_self",
       }, // Categoria de Technologia
       {
         id: "life",
-        text: "Life blogs",
+        text: "Life",
         href: "/blog/categories/life",
         svg: "heart",
         target: "_self",
       }, // Categoria sobre mim
+      {
+        id: "game",
+        text: "Gaming",
+        href: "/blog/categories/game",
+        svg: "play",
+        target: "_self",
+      }, // Categoria de games
     ],
   }, // Página do blog com subitens
   {
