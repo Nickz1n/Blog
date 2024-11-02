@@ -1,0 +1,151 @@
+---
+title: Developing a cool blog
+description: I created this blog to be a portfolio and maintain frequent project activity.
+pubDate: 11 01 2024
+image: /image/aboutme.gif
+categories:
+  - tech
+tags:
+  - patch notes
+badge: Hello my name
+---
+
+import Collapse from "../../components/blog/collapse.astro";
+import Diff from "../../components/blog/diff.astro";
+import Error from "../../components/blog/error.astro";
+import Info from "../../components/blog/info.astro";
+import Kbd from "../../components/blog/kbd.astro";
+import Success from "../../components/blog/success.astro";
+import Warning from "../../components/blog/warning.astro";
+import TimeLine from "../../components/page/TimeLine.astro";
+import LinkCard from "../../components/page/LinkCard.astro";
+
+## Preface
+
+I created this blog using Astro technology, and my main intention was to use `md` to facilitate posting and to be a static website, without needing depend on a backend.
+
+## Main text
+
+### Getting started
+
+First you need to create an `mdx` file, which is as simple as changing the extension to `.mdx`.
+
+### Introducing
+
+The components provided by Astro are placed in the `/blog` and `/page` folders. Write something under the document properties (frontmatter):
+
+```astro
+import Collapse from "../../components/blog/collapse.astro"; import Diff from
+"../../components/blog/diff.astro"; import Error from
+"../../components/blog/error.astro"; import Info from
+"../../components/blog/info.astro"; import Kbd from
+"../../components/blog/kbd.astro"; import Success from
+"../../components/blog/success.astro"; import Warning from
+"../../components/blog/warning.astro"; import TimeLine from
+"../../components/page/TimeLine.astro"; import LinkCard from
+"../../components/page/LinkCard.astro";
+```
+
+### Example
+
+#### Collapse
+
+<Collapse title="This is an example text.">
+  This is the hidden content!
+</Collapse>
+
+```astro
+<Collapse title="This is an example text.">
+  This is the hidden content!
+</Collapse>
+```
+
+#### Diff
+
+<Diff r="https://media.discordapp.net/attachments/786743851674632252/1302085064837824523/image.png?ex=6726d4b7&is=67258337&hm=9ac88c603d24b08a248762ed824415cb1fd1b155b738a032104ae19109ebdb76" l="https://media.discordapp.net/attachments/786743851674632252/1302085157431545886/image.png?ex=6726d4cd&is=6725834d&hm=f9f48b723a5037735e6055c8d431762a49a7c5607efbffef22aa371f431c2bcd"></Diff>
+
+```astro
+<Diff r="https://media.discordapp.net/attachments/786743851674632252/1302085064837824523/image.png?ex=6726d4b7&is=67258337&hm=9ac88c603d24b08a248762ed824415cb1fd1b155b738a032104ae19109ebdb76" l="https://media.discordapp.net/attachments/786743851674632252/1302085157431545886/image.png?ex=6726d4cd&is=6725834d&hm=f9f48b723a5037735e6055c8d431762a49a7c5607efbffef22aa371f431c2bcd"/>
+```
+
+#### Error
+
+<Error>Maybe something went wrong? [www.discloud.com](https://www.discloud.com)</Error>
+
+```astro
+<Error>Maybe something went wrong?</Error>
+```
+
+#### Warning
+
+<Warning>Hey! Watch out for potholes!</Warning>
+
+```astro
+<Warning>Hey! Watch out for potholes!</Warning>
+```
+
+#### Message
+
+<Info>It's just a message.</Info>
+
+```astro
+<Info>It's just a message.</Info>
+```
+
+#### Success
+
+<Success>Congratulations on your successful deployment!</Success>
+
+```astro
+<Success>Congratulations on your successful deployment!</Success>
+```
+
+#### Kbd
+
+<Kbd>Ctrl</Kbd> + <Kbd>C</Kbd> to copy the text.
+
+```astro
+<Kbd>Ctrl</Kbd> + <Kbd>C</Kbd> to copy the text.
+```
+
+#### TimeLine
+
+<TimeLine
+  items={[
+    { year: "2022", event: "I bought my first super mega top computer" },
+    { year: "2023", event: "I sold my pc" },
+    { year: "2024", event: "I built another PC" },
+    { year: "2025", event: "I bought an iPhone" },
+    { year: "2026", event: "I bought a house and a Porsche" },
+  ]}
+/>
+
+```astro
+<TimeLine
+  items={[
+    { year: "2022", event: "I bought my first super mega top computer" },
+    { year: "2023", event: "I sold my pc" },
+    { year: "2024", event: "I built another PC" },
+    { year: "2025", event: "I bought an iPhone" },
+    { year: "2026", event: "I bought a house and a Porsche" },
+  ]}
+/>
+```
+
+#### LinkCard
+
+<LinkCard
+  title="NickZ'in | Blog"
+  desc="My own blog to post daily content"
+  url="https://github.com/Nickz1n/Blog"
+  img="/favicon.svg"
+/>
+
+```astro
+<LinkCard
+  title="NickZ'in | Blog"
+  desc="My own blog to post daily content"
+  url="https://github.com/Nickz1n/Blog"
+  img="/favicon.svg"
+/>
+```
